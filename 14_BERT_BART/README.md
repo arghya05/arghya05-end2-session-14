@@ -12,11 +12,7 @@
 
 ## Solution
 
-|| NBViewer | Google Colab |
-|--|--|--|
-| **TASK 1**:  BERT QA Bot on SQUAD | <a href="https://nbviewer.jupyter.org/github/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BERT_Tutorial_How_To_Build_a_Question_Answering_Bot.ipynb"><img alt="Open In NBViewer" src="https://img.shields.io/badge/render-nbviewer-orange?logo=Jupyter" ></a> | <a href="https://githubtocolab.com/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BERT_Tutorial_How_To_Build_a_Question_Answering_Bot.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a> |
-| **TASK 2**: BERT Sentence Classification  | <a href="https://nbviewer.jupyter.org/github/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BERT_Fine_Tuning_Sentence_Classification_v2.ipynb"><img alt="Open In NBViewer" src="https://img.shields.io/badge/render-nbviewer-orange?logo=Jupyter" ></a> | <a href="https://githubtocolab.com/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BERT_Fine_Tuning_Sentence_Classification_v2.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a> |
-| **TASK 3**: BART Paraphrasing  | <a href="https://nbviewer.jupyter.org/github/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BART_For_Paraphrasing_w_Simple_Transformers.ipynb"><img alt="Open In NBViewer" src="https://img.shields.io/badge/render-nbviewer-orange?logo=Jupyter" ></a> | <a href="https://githubtocolab.com/satyajitghana/TSAI-DeepNLP-END2.0/blob/main/14_BERT_BART/BART_For_Paraphrasing_w_Simple_Transformers.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a> |
+
 
 ### Task 1 Results
 
@@ -66,38 +62,7 @@ model's answer >> President
 question       >> In what geographical portion of England is Abercynon located?
 model's answer >> south Wales
 
-question       >> The successful searches for what showed that the elementary particles are not observable?
-model's answer >> free quarks
 
-question       >> Where did France win a war in the 1950's
-model's answer >> Algeria
-
-question       >> What does the world's first Museum of Riding have one of the largest collections of in the world?
-model's answer >> art posters
-
-question       >> What ethnicity was Frederick William, Elector of Brandenburg?
-model's answer >> Prussia
-
-question       >> Where is a palm house with tropic plants from all over the world on display?
-model's answer >> the New Orangery
-
-question       >> Who had issued the Edict of Nantes?
-model's answer >> Louis XIV
-
-question       >> Whose activities were the French able to gain knowledge of?
-model's answer >> Shirley and Johnson
-
-question       >> According to Ellen Churchill Semple what type of climate was necessary for humans to become fully human?
-model's answer >> the temperate zone
-
-question       >> Who has a codified constitution?
-model's answer >> the European Union
-
-question       >> When was Radcliffe's curriculum secularized?
-model's answer >> the 18th century
-
-question       >> Minister Robert Dinwiddie had an investment in what significant company?
-model's answer >> the Ohio
 ```
 
 ### Task 2 Results
@@ -191,33 +156,7 @@ sentence  > of whom are you thinking ?
 predicted < acceptable
 true cls  = acceptable
 
-sentence  > they were interested in his .
-predicted < acceptable
-true cls  = acceptable
 
-sentence  > the dog bit the cat .
-predicted < acceptable
-true cls  = acceptable
-
-sentence  > who always drinks milk ?
-predicted < acceptable
-true cls  = acceptable
-
-sentence  > john is aware of it that bill is here .
-predicted < unacceptable
-true cls  = unacceptable
-
-sentence  > in which way is clinton anxious to find out which budget dilemma ##s pan ##etta would be willing to solve ?
-predicted < acceptable
-true cls  = unacceptable
-
-sentence  > john was seen the book .
-predicted < unacceptable
-true cls  = unacceptable
-
-sentence  > the argument was sum ##med by the coach up .
-predicted < unacceptable
-true cls  = unacceptable
 ```
 
 ### Task 3 Results
@@ -239,53 +178,7 @@ Text  > Why November 14, birthday of Jawaharlal is celebrated as Children's day?
 Pred  < Why is the birthday of Jawaharlal Nehru celebrated as Children's Day? What exceptional thing did he do to be considered as dearest to children?
 Truth = Why we celebrate Nehru's birthday as children's day?
 
-Text  > What is it like to visit India?
-Pred  < What is it like to visit India?
-Truth = What's it like to visit India?
 
-Text  > Is a third world war coming?
-Pred  < Is there a third world war on the way?
-Truth = Will there be a World War III soon?
-
-Text  > Can we pursue biotechnology after B.tech in mechanical engineering?
-Pred  < Can we pursue biotechnology after B.tech in mechanical engineering?
-Truth = After completing B.Tech in mechanical engineering, what job secured course should you take?
-
-Text  > What does the MATLAB application do?
-Pred  < What does MATLAB application do?
-Truth = What are application of MATLAB?
-
-Text  > Who is the best online dating headshot photographer in San Francisco?
-Pred  < Who is the best online dating photographer in San Francisco?
-Truth = Who are the best Tinder photographers in San Francisco?
-
-Text  > How should I prepare for an Amazon SDE internship interview?
-Pred  < How do I prepare for Amazon SDE internship interview?
-Truth = How should I prepare for the amazon internship written test and interview?
-
-Text  > English cooking dominated early national cooking ; but as new immigrants arrived from other countries, other colonial soups gained popularity.
-Pred  < Paraphrase: English cooking dominated early national cooking ; but as new immigrants arrived from other countries, other colonial soups gained popularity.
-Truth = Cooking dominated early national cuisine, but as new immigrants arrived from other countries, other colonial soups gained popularity.
-
-Text  > What is the smallest decision you have made leading to the biggest impact on your life?
-Pred  < What is the smallest decision you have made leading to the biggest impact on your life?
-Truth = What seemingly unimportant decision made the most profound impact on your life?
-
-Text  > What are the easy ways to earn money online?
-Pred  < How can I earn money online?
-Truth = What is a way to make money online?
-
-Text  > What can I do with C after learning the basics?
-Pred  < What can I do after learning C?
-Truth = What can I do after learning Basics of C?
-
-Text  > Where can I get professional advice for buying and selling a property in Sydney?
-Pred  < Where can I get professional advice for buying and selling a property in Sydney?
-Truth = Where can I get necessary advice for any property transaction in Sydney?
-
-Text  > Whàt is the dark web?
-Pred  < What is the dark web?
-Truth = Wat is the dark web?
 ```
 
 ## BERT
@@ -325,7 +218,4 @@ The decoder must now use this encoding to reconstruct the original document. `A 
 
 ---
 
-<p align="center">
-satyajit<br/>
-:wq 🐈‍⬛
-</p>
+
